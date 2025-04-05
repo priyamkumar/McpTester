@@ -9,6 +9,10 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 
+app.get("/", async (req, res) => {
+  console.log("Working");
+});
+
 app.post("/api/test", async (req, res) => {
   const { serverUrl, apiKey, installationCode } = req.body;
   
