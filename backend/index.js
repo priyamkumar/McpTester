@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  console.log("Working");
+  res.send("Working");
 });
 
 app.post("/api/test", async (req, res) => {
