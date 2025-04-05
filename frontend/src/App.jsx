@@ -17,7 +17,7 @@ function App() {
     setError(null);
     
     try {
-      const response = await fetch('/api/test', {
+      const response = await fetch('https://mcp-tester-backend.vercel.app/api/test', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
